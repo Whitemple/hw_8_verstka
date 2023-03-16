@@ -1,0 +1,71 @@
+@import "./normalize.css";
+@import "./reset.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+}
+/*
+@font-face{
+    font-family:’название шрифта’;
+    src: local(‘название шрифта’);
+    src: url(‘ссылка на шрифт’);
+*/
+#app {
+  width: 100vw;
+  height: 100vh;
+}
+.conteiner {
+  width: 80%;
+  margin: 0 auto;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 120px 1fr 120px;
+}
+.header {
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: 181px 1fr;
+  margin-bottom: 25px;
+}
+.header__logo {
+  height: 120px;
+}
+.header__h1 {
+  align-self: center;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+.main {
+  margin: 0 auto;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 150px 1fr 150px;
+  gap: 50px;
+  margin-bottom: 25px;
+}
+.main__section-middle {
+  height: 550px;
+  overflow: scroll;
+}
+.main__block:not(:last-child) {
+  margin-bottom: 25px;
+}
+.main__h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.main__section-left {
+  display: grid;
+  gap: 20px;
+}
+.footer {
+  grid-row: 3;
+  display: flex;
+  gap: 50px;
+}
